@@ -1,6 +1,7 @@
 $header-color: #5A1213
 $black-color: #131313
 $headline-color: #DEDEDE
+$greytext-color: #B5B5B5
 
 *
 	margin: 0
@@ -13,50 +14,88 @@ body
 	#wrapper
 		display: flex
 		flex-direction: column
-		justify-content: space-around
+		align-items: center
 		width: 100%
-		height: auto
 
 		#header
 			display: flex
 			flex-direction: row
 			justify-content: space-around
-			align-content: center
+			align-items: center
 			width: 100%
-			height: 100px
+			height: 125px
 			background-color: $header-color
-
-			.insideheader
-				align-self: center
 
 		#mainnav
 			display: flex
 			flex-direction: row
-			align-content: center
+			align-items: center
 			width: 100%
-			height: 35px
+			height: 40px
 			background-color: $black-color
 
 		#mainnav ul li
 			display: inline-block
 			list-style: none
 
+		#mainnav ul li a
+			text-decoration: none
+			color: $greytext-color
+			font-weight: bold
+			margin-left: 1rem
+
 		#main
 			display: flex
 			flex-direction: column
-			justify-content: center
+			align-items: space-around
+			width: 95%
 
-		.eacharticle
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			width: 80%
+			#todate
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: center
+				width: 100%
+				height: 40px
+				color: $black-color
 
-img
-	width: 100%
-	height: auto
+			#mainsec-1, #mainsec-2
+				display: flex
+				flex-direction: column
+				align-items: space-around
+				width: 100%
 
-a
-	text-decoration: none
+				.headline1
+					display: flex
+					flex-direction: row
+					width: 92.5%
+					background-color: $headline-color
+					color: $black-color
 
+				.eacharticle
+					display: flex
+					flex-direction: row
+					justify-content: space-around
+					align-items: space-between
+					margin: 1% 0 1% 0
+
+					.news
+						
+
+					.news img
+						width: 75%
+						height: auto
+
+					#banner-vert1, #banner-vert1 img
+						position: absolute
+						width: 30%
+						height: auto
+						right: 0
+
+
+
+					
+
+
+	
 			
