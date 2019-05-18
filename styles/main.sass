@@ -14,7 +14,7 @@ body
 		display: flex
 		flex-direction: column
 		justify-content: space-around
-		width: 90%
+		width: 100%
 		height: auto
 
 		#header
@@ -26,10 +26,31 @@ body
 			height: 100px
 			background-color: $header-color
 
+			.insideheader
+				align-self: center
+
 		#mainnav
+			display: flex
+			flex-direction: row
+			align-content: center
 			width: 100%
 			height: 35px
 			background-color: $black-color
+
+		#mainnav ul li
+			display: inline-block
+			list-style: none
+
+		#main
+			display: flex
+			flex-direction: column
+			justify-content: center
+
+		.eacharticle
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			width: 80%
 
 img
 	width: 100%
@@ -38,4 +59,4 @@ img
 a
 	text-decoration: none
 
-//@import "viewports"
+			

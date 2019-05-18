@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,OAAO;EACN,KAAK,EAAE,IAAI;EAEX,qBAAa;IACZ,UAAU,EAAE,MAAM;;AAEpB,QAAQ;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG",
-"sources": ["viewports.sass"],
-"names": [],
-"file": "viewports.css"
-}
