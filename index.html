@@ -30,7 +30,12 @@
 
 		<main id="main">
 			<section id="todate">
-				<time datetime="2019-05-18">Sa, 18.05.2019<!-- javascript: current date --></time>
+				<time datetime="2019-05-18">
+					<script>
+						var date = new Date().toLocaleString();
+						document.write(date);
+					</script>
+				</time>
 			</section>
 			<section id="mainsec-1">
 				<div class="headline1">
@@ -51,17 +56,13 @@
 						<img src="img/jeff.png">
 						<figcaption>explanatory caption</figcaption>
 					</figure>
-					<figure id="banner-vert1" class="news">
-						<img src="img/banner-2.png">
-					</figure>
 
 				</article>
 				
 				<div class="headline1">
 					<h1>Popular</h1>
 				</div>
-				<article class="eacharticle">
-					
+				<article id="sndart" class="eacharticle">					
 					
 					<figure class="news">
 						<img src="img/polar.png">
@@ -74,6 +75,9 @@
 					<figure class="news">
 						<img src="img/snowden.jpg">
 						<figcaption>explanatory caption</figcaption>
+					</figure>
+					<figure id="banner-vert1" class="news">
+						<img src="img/banner-2.png">
 					</figure>
 					
 				</article><!-- /#eacharticle -->

@@ -68,30 +68,46 @@ body
 				.headline1
 					display: flex
 					flex-direction: row
-					width: 92.5%
+					width: 100%
 					background-color: $headline-color
 					color: $black-color
 
-				.eacharticle
+				.eacharticle, #hintswrapper
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: space-between
+					width: 100%
+
+					#banner-vert1
+						display: none
+
+					.news, .hint
+						width: 16.5rem
+					
+					.news figcaption, .hint figcaption
+						margin: 0
+						background-color: $black-color
+						color: $greytext-color
+
+
+					.news img, .hint img
+						width: 100%
+						height: auto
+
+				/*#hintswrapper
 					display: flex
 					flex-direction: row
 					justify-content: space-around
 					align-items: space-between
 					margin: 1% 0 1% 0
 
-					.news
-						
+					#banner-vert2
+						display: flex
+						flex-direction: row
+						width: 92.5%
 
-					.news img
-						width: 75%
-						height: auto
-
-					#banner-vert1, #banner-vert1 img
-						position: absolute
-						width: 30%
-						height: auto
-						right: 0
-
+					
 
 
 					
